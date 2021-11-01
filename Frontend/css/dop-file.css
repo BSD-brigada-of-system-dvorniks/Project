@@ -1,0 +1,160 @@
+:root {
+    --lightgray: #b1b1b1;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 48px 105px;
+}
+
+/*a {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:hover {
+    color: #f6214b;
+    text-decoration: none;
+}*/
+
+.back-btn {
+    margin-bottom: 32px;
+    color: #fff;
+    background: #f6214b;
+    border: 1px solid transparent;
+    border-radius: 20px;
+
+    display: inline-block;
+    outline: none;
+    line-height: 40px;
+    padding: 0 30px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.date-btn {
+    margin-bottom: 32px;
+    color: #fff;
+    background: #f6214b;
+    border: 1px solid transparent;
+    border-radius: 20px;
+
+    display: inline-block;
+    outline: none;
+    line-height: 40px;
+    padding: 0 30px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.date-btn:hover {
+
+    color: #f6214b;
+    text-decoration: none;
+    border: 1px solid #f6214b;
+    background: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.back-btn:hover {
+    color: #f6214b;
+    text-decoration: none;
+    border: 1px solid #f6214b;
+    background: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.head {
+    padding: 56px 0px;
+    background: var(--lightgray);
+    display: grid;
+    position: relative;
+    text-align: center;
+    display:flex;
+    justify-content: space-between;
+}
+
+.name{
+    margin-left: 83px;
+}
+
+.price{
+    margin-right: 83px;
+}
+
+.body > div {
+    border: 3px solid #eeeeee;
+    border-radius: 10px;
+    display:flex;
+    margin-bottom: 30px;
+}
+
+.trainer-name {
+    background-color: #f6214b;
+    color: #fff;
+    padding: 5px 30px;
+    /* margin-left: 20px;
+    margin-top: -60px; */
+    /* position: absolute; */
+    display: flex;
+}
+
+#photo {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: none;
+    /* transform: translate(); */
+}
+
+.photo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-right : 3px solid #eeeeee;
+    padding: 20px;
+    align-content: space-between;
+    max-height: 200px;
+}
+
+.trainer-price {
+    font-size: 36px;
+    border-left : 3px solid #eeeeee;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* 
+.trainer {
+    max-height: 100px;
+    max-width: 400px;
+    min-width: 150px;
+} */

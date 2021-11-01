@@ -1,0 +1,140 @@
+/* QR code */
+.qr-code {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.qr-code img {
+    width: 40%;
+    height: 40%;
+}
+@media (max-width:720px) and (max-width:576px) {
+    .qr-code img {
+        width: 80%;
+        height: 80%;
+    }
+}
+/* End QR code  */
+
+/* Calendar */
+#calendar {
+    width: 100%;
+    font: monospace;
+    line-height: 1.2em;
+    font-size: 30px;
+    text-align: center;
+}
+
+#calendar thead tr:last-child {
+font-size: 30px;
+color: rgb(85, 85, 85);
+}
+
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+color: rgb(50, 50, 50);
+}
+
+#calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar thead tr:nth-child(1) td:nth-child(3):hover {
+cursor: pointer;
+}
+
+.genric-btn.primary.calendar-table, .genric-btn.primary.calendar-table-today {
+    background-color: #c4c4c4;
+width: 90px;
+    height: 90px;
+/* border: 1px solid white; */
+}
+
+#calendar tbody td a.calendar-table-today {
+    border: 3px solid #f6214b;
+    padding: 10px;
+}
+
+#calendar tbody td a{
+    padding: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+#calendar tbody td{
+vertical-align: middle;
+}
+
+
+#calendar thead td:nth-child(n) {
+    padding-top: 30px;
+    padding-bottom: 20px;
+} 
+
+@media (max-width:576px) {
+    #calendar tbody td a{
+        height: 50px;
+    }
+}
+
+@media (max-width:720px) {
+    #calendar tbody td a{
+        height: 75px;
+    }
+}
+
+#calendar tbody td:nth-child(n+6), #calendar .holiday {
+color: rgb(231, 140, 92);
+}
+
+#calendar tbody td.today a {
+    color: #fff;
+}
+/* End of calendar */
+
+
+/* Some helpful classes */
+.indent {
+    margin-top: 75px;
+}
+.center-vertical-hueta {
+    vertical-align: middle;
+}
+
+.body.col-lg-6.wrapper {
+    overflow: auto;
+    max-height: 750px;
+}
+
+/* End of some helpful classes */
+
+
+/* Buttons */
+.genric-btn.primary.standart-btn {
+    display: table-cell;
+    background-color: #f6214b;
+    border-radius: 25px;
+    vertical-align: middle;
+}
+
+.button-group-area.top-calendar {
+    justify-content: space-between;
+}
+
+.genric-btn.primary.time-button {
+    font-size: 20px;
+    border-radius: 25px;
+    min-width: 110px;
+}
+
+.strelka {
+    color: #f6214b;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/* End Buttons */
+
+/* MainPage */
+/* .mainpage{
+    
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+} */
+/* end of MainPage */
