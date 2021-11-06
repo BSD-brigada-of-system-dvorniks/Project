@@ -1,21 +1,3 @@
-/* QR code */
-.qr-code {
-    margin-top: 75px;
-    display: flex;
-    flex-direction: column;
-}
-.qr-code img {
-    width: 40%;
-    height: 40%;
-}
-@media (max-width:720px) and (max-width:576px) {
-    .qr-code img {
-        width: 80%;
-        height: 80%;
-    }
-}
-/* End QR code  */
-
 /* Calendar */
 #calendar {
     width: 100%;
@@ -23,6 +5,13 @@
     line-height: 1.2em;
     font-size: 30px;
     text-align: center;
+    z-index: 1;
+    /* box-shadow: 0px 20px 60px 0px rgba(246, 33, 75, 0.3); */
+}
+
+#calendar.single-offer {
+    box-shadow: 0px 0px 25px rgba(246, 33, 75, 0.3);
+    justify-content: space-between;
 }
 
 #calendar thead tr:last-child {
@@ -38,11 +27,36 @@ color: rgb(50, 50, 50);
 cursor: pointer;
 }
 
-.genric-btn.primary.calendar-table, .genric-btn.primary.calendar-table-today {
-    background-color: #c4c4c4;
-width: 90px;
+.genric-btn.calendar-table , .btn.calendar-table{
+    background-color: white;
+    color: grey;
+    width: 90px;
     height: 90px;
-/* border: 1px solid white; */
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    line-height: 60px;
+}
+
+.genric-btn.calendar-table-training-day,
+.btn.calendar-table-training-day {
+    background-color: #f6214b;
+    color: white;
+    width: 90px;
+    height: 90px;
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    line-height: 60px;
+}
+
+.calendar-table-training-day:hover {
+    background-color: white;
+    border-color: #f6214b;
+    color:#f6214b;
+}
+
+.calendar-table:hover{
+    color:#f6214b;
+    border-color: #f6214b;
 }
 
 #calendar tbody td a.calendar-table-today {
@@ -56,10 +70,6 @@ width: 90px;
     justify-content: center;
 }
 
-#calendar tbody td{
-vertical-align: middle;
-}
-
 
 #calendar thead td:nth-child(n) {
     padding-top: 30px;
@@ -70,20 +80,18 @@ vertical-align: middle;
     #calendar tbody td a{
         height: 50px;
     }
+    .main-content {
+        flex-direction: column;
+    }
 }
 
 @media (max-width:720px) {
     #calendar tbody td a{
         height: 75px;
     }
-}
-
-#calendar tbody td:nth-child(n+6), #calendar .holiday {
-color: rgb(231, 140, 92);
-}
-
-#calendar tbody td.today a {
-    color: #fff;
+    .main-content {
+        flex-direction: column;
+    }
 }
 /* End of calendar */
 
@@ -97,15 +105,27 @@ color: rgb(231, 140, 92);
 }
 
 .body.col-lg-6.wrapper {
-    overflow: auto;
+    overflow-y: scroll;
     max-height: 750px;
+    box-shadow: 0px 0px 25px rgba(246, 33, 75, 0.3);
 }
 
 /* End of some helpful classes */
 
 
+/* scrollbar */
+.body.wrapper::-webkit-scrollbar {
+    width: 15px;
+}
+.body.wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #f6214b;
+}
+/* end of scrollbar */
+
+
 /* Buttons */
-.genric-btn.primary.standart-btn {
+.genric-btn.primary-border.standart-btn {
     display: table-cell;
     background-color: #f6214b;
     border-radius: 25px;
@@ -131,10 +151,7 @@ color: rgb(231, 140, 92);
 /* End Buttons */
 
 /* MainPage */
-/* .mainpage{
-    
-    max-width: 1080px;
-    display: flex;
-    justify-content: center;
-} */
+.main-content {
+    padding: 45px 100px;
+}
 /* end of MainPage */

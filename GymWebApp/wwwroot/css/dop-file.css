@@ -9,100 +9,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    padding: 48px 105px;
-}
+/* body {
+    padding: 50px 105px;
+} */
 
-/*a {
-    color: #fff;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-a, a:focus, a:hover {
-    text-decoration: none;
-    outline: 0;
-}
-
-a:hover {
-    color: #f6214b;
-    text-decoration: none;
-}*/
-
-.back-btn {
-    margin-bottom: 32px;
-    color: #fff;
-    background: #f6214b;
-    border: 1px solid transparent;
-    border-radius: 20px;
-
-    display: inline-block;
-    outline: none;
-    line-height: 40px;
-    padding: 0 30px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    
-}
-
-.date-btn {
-    margin-bottom: 32px;
-    color: #fff;
-    background: #f6214b;
-    border: 1px solid transparent;
-    border-radius: 20px;
-
-    display: inline-block;
-    outline: none;
-    line-height: 40px;
-    padding: 0 30px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    
-}
-
-.date-btn:hover {
-
-    color: #f6214b;
-    text-decoration: none;
-    border: 1px solid #f6214b;
-    background: #fff;
-    transition: all 0.3s ease 0s;
-}
-
-.back-btn:hover {
-    color: #f6214b;
-    text-decoration: none;
-    border: 1px solid #f6214b;
-    background: #fff;
-    transition: all 0.3s ease 0s;
-}
-
-.head {
-    padding: 56px 0px;
-    background: var(--lightgray);
-    display: grid;
-    position: relative;
-    text-align: center;
-    display:flex;
-    justify-content: space-between;
-}
-
-.name{
-    margin-left: 83px;
-}
-
-.price{
-    margin-right: 83px;
-}
 
 .body > div {
     border: 3px solid #eeeeee;
@@ -110,6 +20,7 @@ a:hover {
     display:flex;
     margin-bottom: 30px;
 }
+
 
 .trainer-name {
     background-color: #f6214b;
@@ -119,6 +30,7 @@ a:hover {
     margin-top: -60px; */
     /* position: absolute; */
     display: flex;
+    border-radius: 10px;
 }
 
 #photo {
@@ -152,9 +64,8 @@ a:hover {
     padding-left: 20px;
 }
 
-/* 
-.trainer {
-    max-height: 100px;
-    max-width: 400px;
-    min-width: 150px;
-} */
+.button-group-area.trainer-list {
+    /* display: flex; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
