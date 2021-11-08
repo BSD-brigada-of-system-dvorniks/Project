@@ -18,7 +18,7 @@ function Calendar(id, year, month) {
       //   calendar += '<td><a href="#" class="genric-btn calendar-table">' + i;
       // }
       if (i % 3==0 || i%5 ==0){
-        calendar += '<td><a href="#" class="genric-btn calendar-table-training-day">' + i;
+        calendar += '<td><a href="#" class="genric-btn calendar-table-training-day" data-toggle="modal" data-target="#modal-training-day">' + i;
       }
       else {
         calendar += '<td><a href="#" class="genric-btn calendar-table">' + i;

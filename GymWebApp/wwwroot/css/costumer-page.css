@@ -147,7 +147,19 @@ cursor: pointer;
     font-size: 60px;
     font-weight: bold;
 }
+ 
+.ok-button {
+    border-radius: 25px;
+    margin-top: 25px;
+    font-size: 35px;
+}
 
+.genric-btn.primary.confirm-button {
+    border-radius: 25px;
+    font-size: 35px;
+    width: 120px;
+    text-align: center;
+}
 /* End Buttons */
 
 /* MainPage */
@@ -155,3 +167,54 @@ cursor: pointer;
     padding: 45px 100px;
 }
 /* end of MainPage */
+
+
+/* Modal */
+.modal-trainer-list {
+    /* position: fixed; */
+    overflow: scroll;
+    width: 100%;
+    padding-right: 0px !important;
+}
+
+.modal-training-day {
+    overflow: scroll;
+    width: 100%;
+    padding-right: 0px !important;
+}
+/* end of Modal */
+
+/* training day */
+.training-day {
+    text-align: center;
+    height: auto;
+}
+
+.training-day .training-day-text {
+    margin-top: 25px;
+    justify-content: center;
+    padding: auto;
+}
+.training-day .training-day-text h1.training-day-text-notice {
+    margin-top: 25px;
+    font-weight: normal;
+    font-size: 30px;
+    color: gray;
+}
+.training-day .training-day-text h3.training-day-text-notice {
+    margin-top: 25px;
+    font-weight: normal;
+    font-size: 20px;
+    color: red;
+}
+/* end of training day */
+
+
+/* Trainer list */
+.trainer-list-notice {
+    color: gray;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+}
+/* end of trainer list */
