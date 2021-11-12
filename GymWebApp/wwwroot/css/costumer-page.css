@@ -154,6 +154,12 @@ cursor: pointer;
     font-size: 35px;
 }
 
+.cancel-button {
+    border-radius: 25px;
+    font-size: 35px;
+    text-align: center;
+}
+
 .genric-btn.primary.confirm-button {
     border-radius: 25px;
     font-size: 35px;
