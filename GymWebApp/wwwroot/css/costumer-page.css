@@ -6,6 +6,7 @@
     font-size: 30px;
     text-align: center;
     z-index: 1;
+    min-height: 745px;
     /* box-shadow: 0px 20px 60px 0px rgba(246, 33, 75, 0.3); */
 }
 
@@ -106,7 +107,7 @@ cursor: pointer;
 
 .body.col-lg-6.wrapper {
     overflow-y: scroll;
-    max-height: 750px;
+    max-height: 745px;
     box-shadow: 0px 0px 25px rgba(246, 33, 75, 0.3);
 }
 
