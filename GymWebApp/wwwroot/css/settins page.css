@@ -23,12 +23,19 @@ body {
     display:flex;
 }
 
+.settings-list-container{
+    display: inline-flex;
+    max-height: 500px;
+    flex-direction: column;
+}
+
 .first-col {
-    align-items: center;
+    /* align-items: center; */
     width: 30%;
     border-right: 3px solid #eeeeee;
-    /*display: flex;
-    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* #rectangle-profile, #rectangle-btn, #rectangle-password, #rectangle-payement, #rectangle-plan {
@@ -46,22 +53,24 @@ body {
     width: 20%;
     /*border:1px solid #000;*/
     background: var(--gray);
-    display:inline-block;
+    display: flex;
     vertical-align: middle;
 }
 
 .profile > a, .plan > a, .password > a, .payement > a{
+    margin-left: 7px;
     text-decoration: none;
     color: black;
-    display:inline-block;
     vertical-align: middle;
 }
 
 .profile, .plan, .password, .payement{
-    margin: 30px 0px;
+    display: inline-flex;
+    margin-top: 30px;
 }
 
 .back-btn {
+    margin-left: 7px;
     color: black;
     vertical-align: middle;
     text-decoration: none;
@@ -69,6 +78,8 @@ body {
 }
 
 .back-menu {
+    display: inline-flex;
+
     position: relative;
     bottom: 0px;
     margin-bottom: 30px;
