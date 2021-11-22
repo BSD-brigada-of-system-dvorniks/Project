@@ -13,15 +13,6 @@
     padding: 50px 105px;
 } */
 
-
-.body > div {
-    border: 3px solid #eeeeee;
-    border-radius: 10px;
-    display:flex;
-    margin-bottom: 30px;
-}
-
-
 .trainer-name {
     background-color: #f6214b;
     color: #fff;
@@ -51,6 +42,7 @@
     padding: 20px;
     align-content: space-between;
     max-height: 200px;
+    min-width: 180px;
 }
 
 .trainer-price {

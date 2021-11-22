@@ -17,36 +17,46 @@
 
 #calendar thead tr:last-child {
 font-size: 30px;
-color: rgb(85, 85, 85);
+color: grey;
 }
 
 #calendar thead tr:nth-child(1) td:nth-child(2) {
-color: rgb(50, 50, 50);
+color: grey;
 }
 
 #calendar thead tr:nth-child(1) td:nth-child(1):hover, #calendar thead tr:nth-child(1) td:nth-child(3):hover {
 cursor: pointer;
 }
 
-.genric-btn.calendar-table , .btn.calendar-table{
+.genric-btn.calendar-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     color: grey;
     width: 90px;
     height: 90px;
     border: 2px solid #eeeeee;
     border-radius: 5px;
-    line-height: 60px;
+    margin: 10px;
 }
 
-.genric-btn.calendar-table-training-day,
-.btn.calendar-table-training-day {
+.genric-btn.calendar-table-training-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f6214b;
     color: white;
     width: 90px;
     height: 90px;
     border: 2px solid #eeeeee;
     border-radius: 5px;
-    line-height: 60px;
+    margin: 10px;
+}
+
+.genric-btn.calendar-table-training-day p ,
+.genric-btn.calendar-table p{
+    margin: 0;
 }
 
 .calendar-table-training-day:hover {
@@ -60,49 +70,27 @@ cursor: pointer;
     border-color: #f6214b;
 }
 
-#calendar tbody td a.calendar-table-today {
+/* Not now */
+/* #calendar tbody td a.calendar-table-today {
     border: 3px solid #f6214b;
     padding: 10px;
-}
-
-#calendar tbody td a{
-    padding: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-}
+} */
 
 
 #calendar thead td:nth-child(n) {
     padding-top: 30px;
     padding-bottom: 20px;
 } 
-
-@media (max-width:576px) {
-    #calendar tbody td a{
-        height: 50px;
-    }
-    .main-content {
-        flex-direction: column;
-    }
-}
-
-@media (max-width:720px) {
-    #calendar tbody td a{
-        height: 75px;
-    }
-    .main-content {
-        flex-direction: column;
-    }
-}
 /* End of calendar */
 
 
 /* Some helpful classes */
+#header{
+    position: sticky;
+}
+
 .indent {
     margin-top: 75px;
-}
-.center-vertical-hueta {
-    vertical-align: middle;
 }
 
 .body.col-lg-6.wrapper {
@@ -141,6 +129,10 @@ cursor: pointer;
     font-size: 20px;
     border-radius: 25px;
     min-width: 110px;
+}
+
+.genric-btn.primary.time-button p{
+    margin: 0;
 }
 
 .strelka {
@@ -218,11 +210,29 @@ cursor: pointer;
 
 
 /* Trainer list */
+.trainer-list-choosed-day {
+    font-size: 25px;
+    color: grey;
+    margin-bottom: 15px;
+    margin-top: -15px;
+    padding-left: 40px;
+    display: flex;
+    justify-self: start;
+}
+
 .trainer-list-notice {
     color: gray;
     font-weight: normal;
     font-size: 30px;
     text-align: center;
     margin-top: 25px;
+}
+
+.trainer-block {
+    border: 3px solid #eeeeee;
+    border-radius: 10px;
+    display:flex;
+    margin-bottom: 25px;
+    min-height: 200px;
 }
 /* end of trainer list */
