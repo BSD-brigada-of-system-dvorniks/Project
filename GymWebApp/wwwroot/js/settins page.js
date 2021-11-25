@@ -42,7 +42,7 @@ if (page == 'settings%20page.html'){
     rectanglePass.style.opacity = "0";
     rectanglePayement.style.opacity = "0";
     rectangleBtn.style.opacity = "0";
-} else if (page == 'settings%20page%202.html'){
+} else if (page == 'settings%20password.html'){
     rectangleProfile.style.opacity = "0";
     rectanglePlan.style.opacity = "0";
     rectanglePass.style.opacity = "100";

@@ -1,4 +1,5 @@
-@import "settings page 2.css";
+@import "settings password.css";
+@import "settings plan.css";
 
 :root {
     --lightgray: #eeeeee;
