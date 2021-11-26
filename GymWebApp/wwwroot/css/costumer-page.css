@@ -54,8 +54,21 @@ cursor: pointer;
     margin: 10px;
 }
 
+.genric-btn.disable.calendar-disable-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+    color: #ffff;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 .genric-btn.calendar-table-training-day p ,
-.genric-btn.calendar-table p{
+.genric-btn.calendar-table p,
+.genric-btn.calendar-disable-day p{
     margin: 0;
 }
 
@@ -114,12 +127,12 @@ cursor: pointer;
 
 
 /* Buttons */
-.genric-btn.primary-border.standart-btn {
+/* .genric-btn.primary-border.standart-btn {
     display: table-cell;
     background-color: #f6214b;
     border-radius: 25px;
     vertical-align: middle;
-}
+} */
 
 .button-group-area.top-calendar {
     justify-content: space-between;
