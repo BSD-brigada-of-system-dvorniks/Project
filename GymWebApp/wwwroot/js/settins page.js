@@ -1,9 +1,9 @@
 //DEFAULT
 const rectangleProfile = document.getElementById('rectangle-profile');
-const rectanglePlan = document.getElementById('rectangle-btn')
+const rectanglePlan = document.getElementById('rectangle-plan')
 const rectanglePass = document.getElementById('rectangle-password')
 const rectanglePayement = document.getElementById('rectangle-payement')
-const rectangleBtn = document.getElementById('rectangle-plan')
+const rectangleBtn = document.getElementById('rectangle-btn')
 
 // rectangleProfile.style.background = '#b1b1b1';
 // rectanglePlan.style.background = 'white';
@@ -47,6 +47,18 @@ if (page == 'settings%20page.html'){
     rectanglePlan.style.opacity = "0";
     rectanglePass.style.opacity = "100";
     rectanglePayement.style.opacity = "0";
+    rectangleBtn.style.opacity = "0"; 
+} else if (page == 'settings%20plan.html'){
+    rectangleProfile.style.opacity = "0";
+    rectanglePlan.style.opacity = "100";
+    rectanglePass.style.opacity = "0";
+    rectanglePayement.style.opacity = "0";
+    rectangleBtn.style.opacity = "0"; 
+} else if (page == 'settings%20payment.html'){
+    rectangleProfile.style.opacity = "0";
+    rectanglePlan.style.opacity = "0";
+    rectanglePass.style.opacity = "0";
+    rectanglePayement.style.opacity = "100";
     rectangleBtn.style.opacity = "0"; 
 }
 
