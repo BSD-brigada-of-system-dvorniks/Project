@@ -1,0 +1,87 @@
+.second-col-plan{
+    margin-top: 30px;
+    width: 75%;
+    padding: 0px 65px;
+    margin-top: 0px ;
+}
+
+.container-header{
+    border-bottom: 3px solid #eeeeee;
+    margin: 30px 0px;
+    font-size: 20px;
+}
+
+.box {
+    line-height: 1.5rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    padding: 10px 0px;
+    border-radius: 15px;
+    text-align: center;
+    background: var(--lightgray);
+    margin-right: 30px;
+    width: 125px;
+    height: 95px;
+}
+
+#box-3{
+    margin-right: 0px;
+}
+
+.complete-btn {
+    display:inline-block;
+    color: var(--brightred);
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.box-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan-panel{
+    background: white;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#galochka {
+    height: 1rem;
+}
+
+#plan-panel-btn {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+#plan-header-text {
+    line-height: 1.5rem;
+}
+
+.plan-header {
+    color: var(--brightred);
+    padding: 10px 30px;
+    border-radius: 15px 15px 0px 0px;
+    background: var(--lightgray);
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan-main {
+    padding: 0px 30px;
+}
+
+.plan-options {
+    margin: 15px 0px;
+    vertical-align: middle;
+}
+
+.plan-footer {
+    padding: 10px 30px;
+    padding-right: 40px;
+    border-radius: 0px 0px 15px 15px;
+    background: var(--lightgray);
+    display: flex;
+    justify-content: end;
+}
