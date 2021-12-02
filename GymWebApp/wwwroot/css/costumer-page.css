@@ -133,6 +133,10 @@ cursor: pointer;
     border-radius: 25px;
     vertical-align: middle;
 } */
+.genric-btn.primary.back-to-personal-page {
+    border-radius: 25px;
+    font-size: 15px;
+}
 
 .button-group-area.top-calendar {
     justify-content: space-between;
