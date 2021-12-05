@@ -14,11 +14,14 @@ function Calendar(id, year, month) {
     }
 
     for(var  i = 1; i <= Dlast; i++) {
-      if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
-        calendar += '<td><a href="#" class="genric-btn primary calendar-table-today">' + i;
+      // if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
+      //   calendar += '<td><a href="#" class="genric-btn calendar-table">' + i;
+      // }
+      if (i % 3==0 || i%5 ==0){
+        calendar += '<td><a href="#" class="genric-btn calendar-table-training-day" data-toggle="modal" data-target="#modal-training-day">' + i;
       }
       else {
-        calendar += '<td><a href="#" class="genric-btn primary calendar-table">' + i;
+        calendar += '<td><a href="#" class="genric-btn calendar-table">' + i;
       }
       if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
         calendar += '<tr>';
