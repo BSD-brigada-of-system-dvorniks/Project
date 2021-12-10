@@ -43,3 +43,21 @@ $("input:checkbox").on('click', function() {
       $box.prop("checked", false);
     }
   });
+
+  //Cards generator
+  $(".card-panel-main").html(GenerateTrainerList());
+
+  function GenerateTrainerList(){
+    let count_of_trainers = 13;
+    let trainer_list = '<div class="card-options">' +
+    '<span class="card-names">XXXX XXXX XXXX XXXX</span>' +
+    '<input type="checkbox" class="radio" value="1" name="fooby[1][]" />' +
+    '<div class="card-delete-btn">Delete</div>' +
+    '</div>';
+    let trainer_list2 = '';
+    for (let i = 0; i < count_of_trainers; i++) {
+        trainer_list2 += trainer_list
+    }
+    return trainer_list2;
+}
+
