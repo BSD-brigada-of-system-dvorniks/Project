@@ -111,3 +111,13 @@
     border-right: 4px lightgrey;
 } */
 /* end of table */
+
+@media screen and (min-width: 500px) and (max-width : 1400px){
+    .personal-data{
+        display: block;
+    }
+
+    #qr-code{
+        justify-content: center;
+    }
+}
