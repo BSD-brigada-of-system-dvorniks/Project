@@ -1,13 +1,12 @@
 //Modal items
 const modal = document.getElementById('email-modal');
-// const openBtn = document.querySelector('.main-btn');
+const openBtn = document.querySelector('.genric-btn.primary');
 const closeBtn = document.querySelector('.close-btn');
 
 //Click events
-
-// openBtn.addEventListener('click', function() {
-//     modal.style.display = 'block';
-// } );
+openBtn.addEventListener('click', function() {
+    modal.style.display = 'block';
+} );
 
 closeBtn.addEventListener('click', function() {
     modal.style.display = 'none';
@@ -39,17 +38,22 @@ function showError(input,message) {
 function showValid(input){
     const formValidation = input.parentElement;
     formValidation.className = 'form-validation valid';
+    return true;
 }
 
 //Check required fields
 function checkRequired(inputArr) {
+var some = 0;
     inputArr.forEach(function(input) {
         if(input.value.trim() === '') {
             showError(input, `${getFieldName(input)} is required`)
+            some --;
         } else {
             showValid(input);
+            some ++;
         }
     })
+    return some;
 }
 
 //Checks input length
@@ -59,7 +63,8 @@ function checkLength(input, min, max) {
     } else if (input.value.lenght > max) {
         showError(input, `${getFieldName(input)} must be less than ${max} characters`);
     } else{
-        showValid(input);
+        return showValid(input);
+
     }
 }
 
@@ -67,6 +72,8 @@ function checkLength(input, min, max) {
 function passwordMatch(input1, input2) {
     if(input1.value !== input2.value) {
         showError(input2, 'Passwords do not match');
+    } else{
+        return true;
     }
 }
 
@@ -80,13 +87,19 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
 
     if(signup == true){
-    checkRequired([name1, email, password, passwordConfirm]);
-    checkLength(name1, 3, 30);
-    checkLength(password, 8, 25);
-    checkLength(passwordConfirm, 8, 25);
-    passwordMatch(password, passwordConfirm);
+    a = checkRequired([name1, email, password, passwordConfirm]);
+    b = checkLength(name1, 3, 30);
+    c = checkLength(password, 8, 25);
+    d = checkLength(passwordConfirm, 8, 25);
+    f = passwordMatch(password, passwordConfirm);
+    console.log(a,b,c,d,f)
+    if ((b && c && d && f) && (a == 4)) {
+        window.location.href = 'personal page.html';
+    }
     } else{
-        checkRequired([email, password]);
+        if (checkRequired([email, password]) == 2){
+            window.location.href = 'personal page.html';
+        }
     }
 })
 
@@ -95,7 +108,7 @@ let signup = true;
 const loginBtn = document.querySelector('.modal-input-login');
 const signupBtn = document.querySelector('.modal-input-signup');
 const inputBtn = document.querySelector('.modal-input-btn');
-const header = document.getElementById("header");
+const header = document.getElementById("registration-header");
 
 function returnToDefault(inputArr) {
     inputArr.forEach(function(input){
@@ -133,3 +146,7 @@ signupBtn.addEventListener('click', function() {
     loginBtn.style.display = "block";
     signupBtn.style.display = "none";
 } );
+
+// function registrationFunction(){
+//     modal.style.display = 'none';
+// }

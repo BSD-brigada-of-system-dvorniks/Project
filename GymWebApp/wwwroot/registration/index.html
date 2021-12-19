@@ -8,9 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="main-btn">
+    <!-- <button class="main-btn">
         <a href="#">Get Started</a>
-    </button>
+    </button> -->
 
 
     <div class="modal" id="email-modal">
@@ -21,26 +21,27 @@
 
             </div>
             <div class="modal-cotent-right">
-                <form action="https://localhost:5001/api/Register" method="POST" class="modal-form" id="form">
-                    <h1>Get started with us today! Create your account by filling out the information below.</h1>
-                    <div class="form-validation">
-                        <input type="text" class="modal-input" id="name" name="name" placeholder="Enter your name">
-                        <p>Error message</p>
-                    </div>
-                    <div class="form-validation">
-                        <input type="email" class="modal-input" id="email" name="email" placeholder="Enter your email">
-                        <p>Error message</p>
-                    </div>
-                    <div class="form-validation">
-                        <input type="text" class="modal-input" id="password" name="password" placeholder="Enter your password">
-                        <p>Error message</p>
-                    </div>
-                    <div class="form-validation">
-                        <input type="text" class="modal-input" id="password-confirm" name="passwordConfirm" placeholder="Confirm your password">
-                        <p>Error message</p>
-                    </div>
-                    <input type="submit" class="modal-input-btn" value="Sign Up">
-                    <span class="modal-input-login">Already have an account? Login <a href="#">here</a></span>
+                <form action="/" method="GET" class="modal-form" id="form">
+                <h1 id="registration-header">Get started with us today! Create your account by filling out the information below.</h1>
+                <div class="form-validation">
+                    <input type="text" class="modal-input" id="name" name="name" placeholder="Enter your name">
+                    <p>Error message</p>
+                </div>
+                <div class="form-validation">
+                    <input type="email" class="modal-input" id="email" name="email" placeholder="Enter your email">
+                    <p>Error message</p>
+                </div>
+                <div class="form-validation">
+                    <input type="text" class="modal-input" id="password" name="password" placeholder="Enter your password">
+                    <p>Error message</p>
+                </div>
+                <div class="form-validation">
+                    <input type="text" class="modal-input" id="password-confirm" name="password" placeholder="Confirm your password">
+                    <p>Error message</p>
+                </div>
+                <input type="submit" class="modal-input-btn" value="Sign Up">
+                <span class="modal-input-login">Already have an account? Login <a href="#">here</a></span>
+                <span class="modal-input-signup">Don't have an account? Sign up <a href="#"> here</a></span>
                 </form>
             </div>
         </div>
