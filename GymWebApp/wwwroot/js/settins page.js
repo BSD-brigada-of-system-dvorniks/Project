@@ -60,6 +60,14 @@ if (page == 'settings%20page.html'){
     rectanglePass.style.opacity = "0";
     rectanglePayement.style.opacity = "100";
     rectangleBtn.style.opacity = "0"; 
+} else if (page == 'settings%20password%20trainer.html'){
+    rectangleProfile.style.opacity = "0";
+    rectanglePass.style.opacity = "100";
+    rectangleBtn.style.opacity = "0"; 
+} else if (page == 'settings%20page%20trainer.html'){
+    rectangleProfile.style.opacity = "100";
+    rectanglePass.style.opacity = "0";
+    rectangleBtn.style.opacity = "0"; 
 }
 
 //Photo upload
