@@ -3,6 +3,8 @@
 <head>
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/elements/fav.png">
 	<!-- Author Meta -->
 	<meta name="author" content="colorlib">
 	<!-- Meta Description -->
@@ -12,23 +14,23 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>calendar Page</title>
+	<title>Personal page</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-	
-	<!--CSS============================================= -->
-	<link rel="stylesheet" href="css/linearicons.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/nice-select.css">			
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/costumer-page.css">
-	<link rel="stylesheet" href="css/dop-file.css">
-	<!--CSS============================================= -->
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="css/linearicons.css">
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/nice-select.css">			
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/personal-page.css">
 </head>
 <body>
+	<!-- header -->
 	<header id="header" id="home">
 	<div class="container">
 		<div class="row header-top align-items-center">
@@ -40,43 +42,62 @@
 			</div>
 			<div class="col-lg-4 col-sm-3 menu-top-middle justify-content-center d-flex">
 				<a href="main test.html">
-					<img class="img-fluid" src="img/logo.png" alt="">
-				</a>
+					<img class="img-fluid" src="img/logo.png" alt="">	
+				</a>			    			
 			</div>
 			<div class="col-lg-4 col-sm-4 menu-top-right">
-				<a href="personal page.html" class="genric-btn primary back-to-personal-page">Back to personal page</a>
+				<a href="settings page.html"><img src="img/Windows_Settings_app_icon.png" alt="" class="settings-button"></a>
 			</div>
 		</div>
-	</div>
-	</header><!-- #header -->
-
-
-	<!-- ---------------------------------------------- -->
-	<!-- content -->
-
-	<div class="d-flex main-content">
-		<!-- calendar -->
-		<div id="calendar" class="container col-lg-6 col-md-6 col-sm-5">
-			<table id="calendar" class="single-offer">
-				<thead>
-					<tr><td class="strelka">‹<td colspan="5"><td class="strelka">›
-					<tr><td>Mo<td>Tu<td>We<td>Th<td>Th<td>Sa<td>Su
-				<tbody>
-			</table>
-		</div>
-		<!-- end of calendar -->
-		
-		<!-- list trainers -->
-		<div id="trainer-list" class="body container col-lg-6 col-md-4 wrapper single-offer"></div>
-		<!-- end list trainers -->
-	</div>
-	<!-- end of content -->
-	<!-- ---------------------------------------------- -->
+	</div>	
+		<!-- <hr> -->
+	</header>
+	<!-- End header -->
 
 	
+	<!-- Content -->
+	<div class="personal-data indent container single-offer col-lg-8">
+		<!-- qr code -->
+		<div id="qr-code">
+			<a href="#">
+				<img src="img/qr-code.png" alt="" class="qr-code">
+			</a>
+		</div>
+		<!-- end of qr code -->
 
-<!-- About Generic Start -->
-<div class="main-wrapper">
+		<!-- table -->
+		<div class="personal-table">
+			<table>
+				<tr>
+					<td class="left-column-table">Trainings left</td><td class="right-column-table">15</td>
+				</tr>
+				<tr>
+					<td class="left-column-table">Active due</td><td class="right-column-table">15/10/2054</td>
+				</tr>
+				<tr>
+					<td class="left-column-table">Status</td><td class="right-column-table">On workout</td>
+				</tr>
+			</table>
+		</div>
+		<!-- end of table -->
+	</div>
+
+	<!-- buttons -->
+	<div class="container col-lg-8 buttons-area-personal indent">
+		<div class="line-buttons">
+			<a href="calendar page.html" class="genric-btn primary-border personal-page-button"><p>My calendar</p></a>
+			<a href="#" class="genric-btn primary-border personal-page-button"><p>My performance</p></a>
+		</div>
+		<div class="line-buttons">
+			<a href="#" class="genric-btn primary-border personal-page-button"><p>History</p></a>
+			<a href="#" class="genric-btn primary-border personal-page-button"><p>My workout</p></a>
+		</div>
+	</div>
+	<!-- end of buttons -->
+
+	<!-- end content -->
+
+
 	<!-- start footer Area -->		
 	<footer class="footer-area section-gap">
 		<div class="container">
@@ -84,7 +105,9 @@
 				<div class="col-lg-3  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h4>About Us</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+						</p>
 					</div>
 				</div>
 				<div class="col-lg-4  col-md-6 col-sm-6">
@@ -114,11 +137,11 @@
 								<button class="genric-btn"><span class="lnr lnr-arrow-right"></span></button>
 								</div>
 							</div>
-								<div class="info mt-20"></div>
+								<div class="info mt-20"></div>									    
 							</form>
 						</div>
 					</div>
-				</div>
+				</div>						
 			</div>
 			<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
 				<p class="footer-text m-0">
@@ -153,53 +176,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/jquery.counterup.min.js"></script>
 	<script src="js/mail-script.js"></script>				
-	<script src="js/main.js"></script>
-	<script src="js/calendar-generator.js"></script>
-	<script src="js/trainer-list.js"></script>
+	<script src="js/main.js"></script>	
 </body>
-
-
-<!-- Modal -->
-<!-- trainer list modal -->
-<div class="modal fade modal-trainer-list" id="modal-trainer-list" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-body" style="text-align: center;">
-				<h1 class="trainer-list-notice"></h1>
-				<div class="button-group-area" style="margin-top: 25px; margin-bottom: 25px;">
-					<button class="genric-btn primary confirm-button" data-dismiss="modal">OK</button>
-					<button class="genric-btn primary cancel-button" data-dismiss="modal">Cancel</button>
-				</div>
-
-			</div>
-		</div>
-	</div>
-</div>
-<!-- end trainer list modal -->
-
-
-<!-- training day modal -->
-<div class="modal fade modal-training-day" id="modal-training-day" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content training-day">
-			<div class="modal-body training-day-text">
-				<h1 class="training-day-text-notice">You signed up for<br>a training session to<br>Vlad Pichenka on 13:45</h1>
-				<button class="genric-btn primary ok-button" data-dismiss="modal">OK</button>
-				<h1 class="training-day-text-notice">Do you want to cancel training?</h1>
-				<h3 class="training-day-text-notice">Warning: you can cancel training
-					session before X hour to training
-					without lose training slot.
-					Else, if you cancel training less
-					then X hour to training
-					you lost your training slot</h3>
-				<div class="button-group-area" style="margin-top: 25px; margin-bottom: 25px;">
-					<button class="genric-btn primary confirm-button" data-dismiss="modal">Yes</button>
-					<button class="genric-btn primary confirm-button" data-dismiss="modal">No</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- end training day model -->
-<!-- end Modal -->
 </html>
